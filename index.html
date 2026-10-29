@@ -39,6 +39,19 @@
  .transition-title{left:22px;right:22px;bottom:10vh}
  .transition-title .transition-note{font-size:7px;margin-bottom:22px}
 }
+
+/* Videolar bölümü */
+.reels{padding:30px 6vw 100px}
+.reel-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:34px 26px}
+.reel{min-width:0}
+.reel-play{position:relative;display:block;width:100%;aspect-ratio:9/16;border:0;padding:0;overflow:hidden;background:var(--petrol)}
+.reel-play img,.reel-play video{display:block;width:100%;height:100%;object-fit:cover;background:var(--petrol)}
+.reel-play img{transition:transform 1.1s cubic-bezier(.2,.6,.2,1)}
+.reel-play:hover img,.reel-play:focus-visible img{transform:scale(1.045)}
+.reel-play:hover .story-arrow{background:var(--lime)}
+.reel-play.is-playing{cursor:default}
+.reel .story-meta{margin-top:14px}
+@media(max-width:720px){.reels{padding:20px 22px 70px}.reel-grid{grid-template-columns:1fr 1fr;gap:26px 14px}}
 </style>
   
 </head>
@@ -109,6 +122,21 @@
         <button class="story-button small-story" type="button" data-story="2" aria-haspopup="dialog"><div class="image-wrap"><img src="assets/image-10-42cc91805f.webp" alt="Işıklarla örülü minyatür şehir" loading="lazy" width="1080" height="1350"><span class="story-arrow" aria-hidden="true">▶</span></div><div class="story-meta"><span>TOPLUM / BAĞLANTI</span><span>03</span></div><h3>Bir ağ sustuğunda,<br>şehirde ne değişir?</h3></button>
       </div>
       <p class="prototype-note">Bu seçki tasarım prototipi için hazırlanmıştır. Görseller yapay zekâ ile üretilmiştir; başlıklar örnek editoryal önerilerdir.</p>
+    </section>
+    <section class="reels" id="videolar" aria-labelledby="reelsTitle">
+      <div class="section-heading"><div><p class="eyebrow">MALUM / VİDEOLAR</p><h2 id="reelsTitle">İzlemeye değer.</h2></div><span class="demo-label">10 VİDEO</span></div>
+      <div class="reel-grid">
+<article class="reel"><button class="reel-play" type="button" data-src="assets/reel-b05.mp4" aria-label="Karanfil videosunu oynat"><img src="assets/reel-b05.webp" alt="" width="540" height="960" loading="lazy"><span class="story-arrow" aria-hidden="true">▶</span></button><div class="story-meta"><span>KARANFIL</span><span>B05</span></div></article>
+<article class="reel"><button class="reel-play" type="button" data-src="assets/reel-b06.mp4" aria-label="Saat videosunu oynat"><img src="assets/reel-b06.webp" alt="" width="540" height="960" loading="lazy"><span class="story-arrow" aria-hidden="true">▶</span></button><div class="story-meta"><span>SAAT</span><span>B06</span></div></article>
+<article class="reel"><button class="reel-play" type="button" data-src="assets/reel-e16.mp4" aria-label="Las Meninas videosunu oynat"><img src="assets/reel-e16.webp" alt="" width="540" height="960" loading="lazy"><span class="story-arrow" aria-hidden="true">▶</span></button><div class="story-meta"><span>LAS MENINAS</span><span>E16</span></div></article>
+<article class="reel"><button class="reel-play" type="button" data-src="assets/reel-s001.mp4" aria-label="Star Wars videosunu oynat"><img src="assets/reel-s001.webp" alt="" width="540" height="960" loading="lazy"><span class="story-arrow" aria-hidden="true">▶</span></button><div class="story-meta"><span>STAR WARS</span><span>S001</span></div></article>
+<article class="reel"><button class="reel-play" type="button" data-src="assets/reel-t39.mp4" aria-label="Captcha videosunu oynat"><img src="assets/reel-t39.webp" alt="" width="540" height="960" loading="lazy"><span class="story-arrow" aria-hidden="true">▶</span></button><div class="story-meta"><span>CAPTCHA</span><span>T39</span></div></article>
+<article class="reel"><button class="reel-play" type="button" data-src="assets/reel-u019.mp4" aria-label="Uzay Güneş videosunu oynat"><img src="assets/reel-u019.webp" alt="" width="540" height="960" loading="lazy"><span class="story-arrow" aria-hidden="true">▶</span></button><div class="story-meta"><span>UZAY GÜNEŞ</span><span>U019</span></div></article>
+<article class="reel"><button class="reel-play" type="button" data-src="assets/reel-u023.mp4" aria-label="Kahvaltı videosunu oynat"><img src="assets/reel-u023.webp" alt="" width="540" height="960" loading="lazy"><span class="story-arrow" aria-hidden="true">▶</span></button><div class="story-meta"><span>KAHVALTI</span><span>U023</span></div></article>
+<article class="reel"><button class="reel-play" type="button" data-src="assets/reel-u029.mp4" aria-label="Kruvasan videosunu oynat"><img src="assets/reel-u029.webp" alt="" width="540" height="960" loading="lazy"><span class="story-arrow" aria-hidden="true">▶</span></button><div class="story-meta"><span>KRUVASAN</span><span>U029</span></div></article>
+<article class="reel"><button class="reel-play" type="button" data-src="assets/reel-u115.mp4" aria-label="Elektrikli videosunu oynat"><img src="assets/reel-u115.webp" alt="" width="540" height="960" loading="lazy"><span class="story-arrow" aria-hidden="true">▶</span></button><div class="story-meta"><span>ELEKTRIKLI</span><span>U115</span></div></article>
+<article class="reel"><button class="reel-play" type="button" data-src="assets/reel-u122.mp4" aria-label="Noel Baba videosunu oynat"><img src="assets/reel-u122.webp" alt="" width="540" height="960" loading="lazy"><span class="story-arrow" aria-hidden="true">▶</span></button><div class="story-meta"><span>NOEL BABA</span><span>U122</span></div></article>
+      </div>
     </section>
     <footer class="footer"><a class="footer-logo" href="#baslangic">MALUM</a><div class="footer-bottom"><p>NEYİ DEĞİŞTİRDİĞİYLE İLGİLENİYORUZ.</p><a href="https://www.instagram.com/malum.tr/" target="_blank" rel="noopener noreferrer">INSTAGRAM / @MALUM.TR ↗</a><a href="#baslangic">BAŞA DÖN ↑</a><span>© MALUM 2026</span></div></footer>
   </main>
@@ -603,6 +631,20 @@
   $('.dialog-close').addEventListener('click',()=>dialog.close());
   dialog.addEventListener('click',event=>{if(event.target===dialog){const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close();}});
   dialog.addEventListener('close',()=>{video.pause();document.body.classList.remove('dialog-open');opener?.focus({preventScroll:true});});
+})();
+</script>
+<script>
+(()=>{
+  const grid=document.querySelector('.reel-grid');if(!grid)return;
+  grid.addEventListener('click',e=>{
+    const b=e.target.closest('.reel-play');if(!b||b.classList.contains('is-playing'))return;
+    grid.querySelectorAll('video').forEach(v=>v.pause());
+    const poster=b.querySelector('img');
+    const v=document.createElement('video');
+    v.src=b.dataset.src;v.poster=poster.src;v.controls=true;v.playsInline=true;v.autoplay=true;
+    b.classList.add('is-playing');b.querySelector('.story-arrow')?.remove();poster.replaceWith(v);
+    v.play().catch(()=>{});
+  });
 })();
 </script>
 </body>
